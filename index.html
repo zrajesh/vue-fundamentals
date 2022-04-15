@@ -15,7 +15,7 @@
       <input
        type="text" 
        :value="lastName" 
-       @input="updateLastName"
+       @input.prevent="updateLastName('Lastname triggered', $event)"
        name="name" 
        id="lname" 
        />
